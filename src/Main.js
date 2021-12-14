@@ -27,7 +27,7 @@ function Main({count, setCount}) {
             <div>
             <div className="map-photos">
                     <button className="button_slide slide_left" onClick={() => setCount(4)}>Map Photos (future)</button>
-                    <p>Window shopping on Google Maps!</p>
+                    <p>Window shopping app using Google Maps!</p>
                 </div>
             </div>
         </div>
