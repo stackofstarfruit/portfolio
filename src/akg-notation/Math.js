@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../App.css';
 import Title from "./components/Title.js";
 import Counting from "./components/Counting.js";
 import Digits from "./components/Digits.js";
@@ -11,6 +10,7 @@ import Inverses from "./components/Inverses.js";
 import HalfCircle from "./components/HalfCircle.js";
 import HalfCircleMore from "./components/HalfCircleMore.js";
 import Finish from "./components/Finish.js";
+import { Link } from "react-router-dom";
 
 function Math() {
     const [mathCount, setMath] = useState(0);
@@ -30,8 +30,14 @@ function Math() {
             {mathCount === 9 && <HalfCircleMore />}
             {mathCount >= 10 && <Finish />}
             <div className="button-container">
-            {mathCount !== 0 && <button className="button_slide slide_left" onClick={() => setMath(mathCount - 1)}>BACK</button>}
+            {mathCount !== 0 && <button class="button_slide slide_left" onClick={() => setMath(mathCount - 1)}>BACK</button>}
             {mathCount !== 10 && <button className="button_slide slide_left" onClick={() => setMath(mathCount + 1)}>NEXT</button>}
+            {mathCount === 10 && <button className="button_slide slide_left" onClick={() => setMath(0)}>HOME</button>}
+            </div>
+            <div className="button-container">
+                <button class="button_slide slide_left">
+                    <Link to="/">Portfolio Home</Link>
+                </button>
             </div>
             </header>
         </div>

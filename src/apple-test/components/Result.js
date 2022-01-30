@@ -42,7 +42,7 @@ function Result({count, setCount, skin, setSkin, flesh, setFlesh, core, setCore}
 
     const type = [
         "NORMIE",
-        "FALSE WACK / DAD",
+        "FALSE WACK",
         "QUIRKY",
         "QUIRKY SQUARED",
         "NORMIE ON THE OUTSIDE",

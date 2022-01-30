@@ -1,66 +1,97 @@
-.back-button {
-  position: fixed;
-  bottom: 0%;
+body {
+  background-image: linear-gradient(#0f1625, #455d97);
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  text-align: center;
+  min-height: 100vh;
 }
 
-.button_slide {
-  color: #000;
-  border: 2px solid rgb(216, 2, 134);
-  border-radius: 0px;
-  padding: 18px 36px;
-  display: inline-block;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
+html, body, #app, #app>div {
+  height: 100%
 }
 
-.slide_left:hover {
-  box-shadow: inset 0 0 0 50px #D80286;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.desc-container {
-  width: "50%";
+h1#name {
+  text-align: left;
+}
+
+section > img {
+  height: 200px;
+  width: auto;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#intro-container {
+  text-align: left;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#intro-container article {
+  margin-left: 30px;
+}
+
+#intro-container a {
+  text-decoration: underline;
+}
+
+#intro-container p {
+  width: 80%;
+}
+
+#gallery {
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
 .project-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin: auto;
-}
-
-.map-photos {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  padding: 2%;
   width: 25%;
 }
 
-.apple-test {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 25%;
+.project-container a {
+  color: #000;
+  border: 2px solid #6495ED;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #6495ED;
+  transition: ease-out 0.4s;
+  height: 50%;
+  width: 70%;
+  background: white;
+  text-decoration: none;
 }
 
-.wandering-inn {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 25%;
+.project-container a:hover {
+  box-shadow: inset 0 0 0 50px #6495ED;
 }
 
-.akg-notation {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 25%;
+.project-container p {
+  height: 50px;
+  width: 100%;
+  text-align: center;
 }
+
 .App {
   text-align: center;
 }
@@ -76,16 +107,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;

@@ -1,6 +1,7 @@
 import '../Test.css';
 import logo from '../apple.png';
 import Typewriter from "typewriter-effect"
+import { Link } from "react-router-dom";
 
 function Start({count, setCount}) {
     return (
@@ -20,7 +21,11 @@ function Start({count, setCount}) {
                 are you?
             </div>
             <button className="btn btn2" onClick={() => setCount(count + 1)}>
-            Take the Quiz!
+                Take the Quiz!
+            </button>
+            <br />
+            <button className="btn btn2">
+                <Link to="/">About the Test</Link>
             </button>
         </header>
     )

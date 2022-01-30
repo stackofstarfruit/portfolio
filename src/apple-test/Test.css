@@ -1,3 +1,10 @@
+body {
+  min-height: 90vh;
+  min-width: 90vw;
+  max-height: 90vh;
+  max-width: 90vw;
+}
+
 .pbar {
   width: 10%;
   background:#A7171A;
@@ -19,6 +26,10 @@
   margin: auto;
   align-items: center;
   width: 50%;
+  text-align: center;
+}
+
+h1 {
   text-align: center;
 }
 
@@ -109,7 +120,8 @@ progress.qprogress[value]::-webkit-progress-value {
 }
 
 .qcontainer {
-  width: 67%;
+  width: 67vw;
+  height: 30vh;
 }
 
 .no:after {
@@ -140,7 +152,7 @@ progress.qprogress[value]::-webkit-progress-value {
 }
 
 .type-container {
-  width: 16rem;
+  width: 18rem;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
